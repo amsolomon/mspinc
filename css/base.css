@@ -19,17 +19,19 @@
     margin-right: 15%;*/
    /*margin-left: auto
     margin-right: auto;*/
-    max-width: 960px;
-    max-height: auto;
+    /*max-width: 960px;*/
+    max-height: auto; /* allows the length of the wrapper box to stretch down the screen with content*/
     /*min-width: 960px;*/
 }
 
+/* entire page body default text appearance*/
 body {
     font-family: georgia, sans-serif;
     font-size: 18px;
     line-height: 18px;   
 }
 
+/* entire page body link features*/
 body a:link {} /* if it has not been clicked */
 body a:visited {} /* if user has been to site */
 
@@ -43,11 +45,11 @@ body a:active {
 
 body a:focus {} /* if user hits tab key */
 
+/* header banner with home button and nav bar links*/
 header {
-    background-color: #000000; /* black */ /* header nav bar visual box*/
-    color: #ffffff; /* white */
-    height: 60px;
-    width: 100%;
+    background-color: #000000; /* black */ /* header nav bar visual box color*/
+    height: 55px; /* header nav bar visual box height*/
+    width: 100%; /* header nav bar visual box 100% width of wrapper container*/
 }
 
 /*All of the links in the header */
@@ -73,35 +75,42 @@ header a:focus {} /* if user hits tab key */
 /* Just the h1 box*/
 header h1 {
     float: left;
-    /*display: inline;*/
+    display: inline;
+    border: 3px solid white;
+    padding: 10px;
+    width: 40%; /* width is 40% of wrapper box*/
     font-size: 28px;
     font-family: helvetica, arial, sana-serif;
     font-weight: 500; /*width of boldness 800 normall - 400 is thin */
-    border: 3px solid white;
-    padding: 10px;
-    /*margin: 40px;*/
-    width: 40%;
 }
+
 /* Just the nav box*/ /* header nav bar link item box*/
 header nav {
-   /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
-    width: 55%;
-    margin-top: 10px;
-    margin-left: 10px;
-    /*height: 40px;*/
     float: left;
+    display: inline;
+   /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
+    width: 55%; /* width is 40% of wrapper box*/
+    padding: 10px;
+    /*margin-left: 10px;*/
+    
 }
 /* Just the nav box links*/ /*each individual link item box*/
 header nav a {
-    margin-left: 9px;
+    float: left;
+    display: inline;
+   /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
+    /*padding: 10px*/
+    margin-right: 5px;
 }
 
-figure img {
+img {
     /*border: 5px solid #cccccc; /*grey*/
-    margin: 0 5% 0  5%;
-    padding: 5px; /* Space on the inside but adds to the over all width. */
-    width: 960;
+    margin: 0 auto;
+    padding: 1px; /* Space on the inside but adds to the over all width. */
+    width: 100%;
     float: left;
+    margin-top: 3px;
+    
 }
 
 article {
