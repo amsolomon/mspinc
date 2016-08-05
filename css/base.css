@@ -78,7 +78,7 @@ header h1 {
     display: inline;
     border: 3px solid white;
     padding: 10px;
-    width: 40%; /* width is 40% of wrapper box*/
+    width: 40%; /* width is 40% of header box*/
     font-size: 28px;
     font-family: helvetica, arial, sana-serif;
     font-weight: 500; /*width of boldness 800 normall - 400 is thin */
@@ -89,7 +89,7 @@ header nav {
     float: left;
     display: inline;
    /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
-    width: 55%; /* width is 40% of wrapper box*/
+    width: 55%; /* width is 40% of header box*/
     padding: 10px;
     /*margin-left: 10px;*/
     
@@ -116,6 +116,7 @@ img {
 article {
     padding: 0 10px 0 10px;
     clear: both /* ignore a float, stay as block level element */
+    
 }
 
 article h1 {
@@ -157,7 +158,7 @@ li {
     line-height: 1px;
 }
 
-#description {
+.description {
     margin-bottom: 12px;
     font-size: 12px;
     line-height: 12px;
