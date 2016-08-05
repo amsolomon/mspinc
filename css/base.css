@@ -1,0 +1,246 @@
+/* general element styles. for whole page */
+* {
+    box-sizing: border-box; /* this code makes entire page 100% of viewport box */
+    margin: 0 auto; /* centers all boxes in viewport*/
+    padding: 5px; /* space on the inside of each box in viewport */
+    max-width: 960px; /*the default size of the viewport is set to normal desktop screen/viewport size of 960px */
+    /* margin-left: auto;
+    margin-right: auto;*/
+} 
+
+/* entire page id=wrapper descriptors Box that contains all content */
+#wrapper {
+    border-style: solid; /*gives wrapper a visibal box*/
+    border-width: 5px; /*gives wrapper box a thickness*/
+    border-color: #000000; /*black*//*gives wrapper box a color*/
+    /*padding: 0px;*/ /*this code would over ride the box-sizing padding of 5px to set no padding inside the wrapper box */
+    margin-top: 10px; /* pushes the wrapped 10px off the top of the viewport*/
+    /*margin-left: 15%;
+    margin-right: 15%;*/
+   /*margin-left: auto
+    margin-right: auto;*/
+    max-width: 960px;
+    max-height: auto;
+    /*min-width: 960px;*/
+}
+
+body {
+    font-family: georgia, sans-serif;
+    font-size: 18px;
+    line-height: 18px;   
+}
+
+body a:link {} /* if it has not been clicked */
+body a:visited {} /* if user has been to site */
+
+body a:hover {
+    color: grey; /* white */
+}
+
+body a:active {
+    text-decoration: underline
+} /* is user is clicking down*/
+
+body a:focus {} /* if user hits tab key */
+
+header {
+    background-color: #000000; /* black */ /* header nav bar visual box*/
+    color: #ffffff; /* white */
+    height: 60px;
+    width: 100%;
+}
+
+/*All of the links in the header */
+header a {
+    /*margin-right: 20px;*/
+    color: #aaaaaa; /* grey */
+    text-decoration: none /* takes off underlines */
+}
+
+header a:link {} /* if it has not been clicked */
+header a:visited {} /* if user has been to site */
+
+header a:hover {
+    color: #eeeeee; /* white */
+}
+
+header a:active {
+    text-decoration: underline
+} /* is user is clicking down*/
+
+header a:focus {} /* if user hits tab key */
+
+/* Just the h1 box*/
+header h1 {
+    float: left;
+    /*display: inline;*/
+    font-size: 28px;
+    font-family: helvetica, arial, sana-serif;
+    font-weight: 500; /*width of boldness 800 normall - 400 is thin */
+    border: 3px solid white;
+    padding: 10px;
+    /*margin: 40px;*/
+    width: 40%;
+}
+/* Just the nav box*/ /* header nav bar link item box*/
+header nav {
+   /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
+    width: 55%;
+    margin-top: 10px;
+    margin-left: 10px;
+    /*height: 40px;*/
+    float: left;
+}
+/* Just the nav box links*/ /*each individual link item box*/
+header nav a {
+    margin-left: 9px;
+}
+
+figure img {
+    /*border: 5px solid #cccccc; /*grey*/
+    margin: 0 5% 0  5%;
+    padding: 5px; /* Space on the inside but adds to the over all width. */
+    width: 960;
+    float: left;
+}
+
+article {
+    padding: 0 10px 0 10px;
+    clear: both /* ignore a float, stay as block level element */
+}
+
+article h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+article h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    /*font-size: 24px;*/
+    line-height: 36px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+article h4 {
+    /*font-size: 24px;*/
+    line-height: 36px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1px;
+}
+
+#description {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
+container {
+float: right;
+border-style: solid;
+border-width: 2px;
+}
+
+div{
+float:left;
+}
+
+box{
+float:left;
+}
+
+button {
+font-size: 36px;
+}
+
+.news {
+margin-bottom: 12px;
+font-size: 16px;
+line-height: 24px;
+
+}
+
+#admin {
+margin-bottom: 12px;
+font-size: 16px;
+line-height: 24px;
+}
+/* Just the subnav box*/
+subnav {
+   /* border: 3px solid red;*/
+    background-color: #000000;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 20px;
+    /*height: 40px;*/
+    float: left;
+}
+subnav a {
+    color: #aaaaaa; 
+    margin-right: 10px;
+    margin-left: 20px;
+    text-decoration: none; /* takes off underlines */
+    font-size: 15px;
+}
+    
+/*All of the links in the subnav */
+
+subnav a:link {} /* if it has not been clicked */
+subnav a:visited {} /* if user has been to site */
+
+subnav a:hover {
+    color: #ffffff; /* white */
+}
+
+subnav a:active {
+    text-decoration: underline
+} /* is user is clicking down*/
+
+subnav a:focus {} /* if user hits tab key */
+
+article a:link {
+color: red; /* red */
+}
+
+
+footer {
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+    clear: both
+        
+}
+
+.copyright{
+font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 100px;
+}
+    nav {
+        width: 100%;
+    }
+    
+}
