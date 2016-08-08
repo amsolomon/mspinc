@@ -36,14 +36,14 @@ body a:link {} /* if it has not been clicked */
 body a:visited {} /* if user has been to site */
 
 body a:hover {
-    color: grey; /* white */
+    color: grey; /* white */ /*light up links when user hovers over with mouse pointer*/
 }
 
 body a:active {
-    text-decoration: underline
-} /* is user is clicking down*/
+    text-decoration: underline /* is user is clicking down*/
+} 
 
-body a:focus {} /* if user hits tab key */
+body a:focus {} /* if user hits tab key page selects next link */
 
 /* header banner with home button and nav bar links*/
 header {
@@ -54,13 +54,12 @@ header {
 
 /*All of the links in the header */
 header a {
-    /*margin-right: 20px;*/
-    color: #aaaaaa; /* grey */
+    color: #aaaaaa; /* colors the linked words grey */
     text-decoration: none /* takes off underlines */
 }
 
 header a:link {} /* if it has not been clicked */
-header a:visited {} /* if user has been to site */
+header a:visited {} /* if user has been to site */ /*changes the color of linked work if visited*/
 
 header a:hover {
     color: #eeeeee; /* white */
@@ -103,26 +102,29 @@ header nav a {
     margin-right: 5px;
 }
 
+/* Just the img box*/
 img {
     /*border: 5px solid #cccccc; /*grey*/
     margin: 0 auto;
     padding: 1px; /* Space on the inside but adds to the over all width. */
     width: 100%;
     float: left;
-    margin-top: 3px;
-    
+    margin-top: 3px;    
 }
+
+/* Just the article box*/
 
 article {
     padding: 0 10px 0 10px;
     clear: both /* ignore a float, stay as block level element */
     
 }
-
+/*aticle headings bix - visual look and text appearance*/
 article h1 {
     font-size: 36px;
     line-height: 36px;
     margin-top: 10px;
+    width: 100%; /*100% of article box*/
 }
 
 article h2 {
@@ -130,41 +132,59 @@ article h2 {
     line-height: 36px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%; /*100% of article box*/
+    
 }
 
 article h3 {
-    /*font-size: 24px;*/
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 24px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 article h4 {
-    /*font-size: 24px;*/
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-p {
+p { /*used under h2 for pages' into lines font appearance*/ /* and adjusts p box appearance*/ 
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 16px;
 }
 
-li {
-    margin-bottom: 12px;
+li { /* adjusts the look and text of the li boxes */
+    margin-bottom: 5px;
     font-size: 12px;
-    line-height: 1px;
+    line-height: 3px;
 }
 
-.description {
-    margin-bottom: 12px;
+.description { 
+    margin-bottom: 5px;
     font-size: 12px;
     line-height: 12px;
 }
 
+.news { /* appearance of text in index page's news lines, contact page's email and phone #, & employment opportunity links */
+margin-bottom: 1px;
+font-size: 16px;
+line-height: 24px;
 
+}
+.copyright{
+font-size: 10px;
+}
+
+/*#admin {
+margin-bottom: 12px;
+font-size: 16px;
+line-height: 24px;
+}*/
+
+/*boxes to visually space job description boxes*/
 container {
 float: right;
 border-style: solid;
@@ -183,19 +203,7 @@ button {
 font-size: 36px;
 }
 
-.news {
-margin-bottom: 12px;
-font-size: 16px;
-line-height: 24px;
-
-}
-
-#admin {
-margin-bottom: 12px;
-font-size: 16px;
-line-height: 24px;
-}
-/* Just the subnav box*/
+/* Just the subnav boxes*/
 subnav {
    /* border: 3px solid red;*/
     background-color: #000000;
@@ -242,17 +250,20 @@ footer {
         
 }
 
-.copyright{
-font-size: 10px;
-}
 
 @media screen and (max-width: 600px) {
 
     header {
         height: 100px;
 }
+    h1 {
+        float: left;
+        width: 100%;
+    }
     nav {
         width: 100%;
+        clear: both;
+        
     }
     
 }
