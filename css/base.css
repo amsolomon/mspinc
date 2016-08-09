@@ -130,16 +130,16 @@ article h1 {
 
 article h2 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 100%; /*100% of article box*/
     
 }
 
 article h3 {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
     margin-top: 5px;
     /*margin-bottom: 5px;*/
 }
@@ -179,6 +179,38 @@ line-height: 24px;
 font-size: 10px;
 }
 
+box {
+float: left;
+width: 100%;
+clear:both;
+    
+}
+container {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+container h4{
+font-size: 16px;
+    line-height: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+column1{
+    float: left;
+    width: 50%;
+    margin-bottom: 2px;
+
+}
+
+column2 {
+float: right; 
+    width: 50%;
+    margin-bottom: 2px;
+    
+}
+
 /*#admin {
 margin-bottom: 12px;
 font-size: 16px;
@@ -186,8 +218,8 @@ line-height: 24px;
 }*/
 
 /*boxes to visually space job description boxes*/
-container {
-float: right;
+aside {
+float:right;
 border-style: solid;
 border-width: 2px;
 }
@@ -196,12 +228,11 @@ div{
 float:left;
 }
 
-box{
-float:left;
-}
+
 
 button {
 font-size: 36px;
+    display: inline-block;
 }
 
 /* Just the subnav boxes*/
