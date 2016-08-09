@@ -250,25 +250,25 @@ footer {
     clear: both
         
 }
-
+/*
 @media screen  and (max-width: 959px) /* small screen */ {
-    header nav a {
+   /* header nav a {
     
     font-size: 100px;
     font-weight: 500;
 }
 
 @media screen  and (max-width: 700px) /* Tablet */ {
-    header nav a {
+/*    header nav a {
     
     font-size: 50px;
     font-weight: 500;
 }
-
-        
+*/
+/*        
 @media screen and (max-width: 600px) /* phone */ {
-
-    header {
+/*
+  header {
         height: 95px;        
 }
     
@@ -290,7 +290,7 @@ footer {
     display: inline;
    /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
     /*padding: 10px*/
-    margin-right: 1px;
+/*    margin-right: 1px;
     font-size: 13px;
     font-weight: 500;
 }
