@@ -247,6 +247,9 @@ button {
 font-size: 36px;
     width: 50%;
     margin-left: 200px;
+    border-style: solid; /*gives wrapper a visibal box*/
+    border-width: 3px; /*gives wrapper box a thickness*/
+    border-color: #000000; /*black*//*gives wrapper box a color*/
     
 
 }
