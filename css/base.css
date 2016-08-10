@@ -77,7 +77,7 @@ header h1 {
     display: inline;
     border: 3px solid white;
     padding: 10px;
-    width: 40%; /* width is 40% of header box*/
+    width: 39%; /* width is 40% of header box*/
     font-size: 28px;
     font-family: helvetica, arial, sana-serif;
     font-weight: 500; /*width of boldness 800 normall - 400 is thin */
@@ -88,7 +88,7 @@ header nav {
     float: left;
     display: inline;
    /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
-    width: 55%; /* width is 40% of header box*/
+    width: 60%; /* width is 40% of header box*/
     padding: 10px;
     /*margin-left: 10px;*/
     
@@ -301,24 +301,9 @@ footer {
         
 }
 /*
-@media screen  and (max-width: 959px) /* small screen */ {
-   /* header nav a {
+@media screen and (max-width: 600px) {
     
-    font-size: 100px;
-    font-weight: 500;
-}
-
-@media screen  and (max-width: 700px) /* Tablet */ {
-/*    header nav a {
-    
-    font-size: 50px;
-    font-weight: 500;
-}
-*/
-/*        
-@media screen and (max-width: 600px) /* phone */ {
-/*
-  header {
+      header {
         height: 95px;        
 }
     
@@ -340,7 +325,7 @@ footer {
     display: inline;
    /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
     /*padding: 10px*/
-/*    margin-right: 1px;
+   /* margin-right: 1px;
     font-size: 13px;
     font-weight: 500;
 }
@@ -361,77 +346,6 @@ subnav a {
     /*clear:both;*/
     /*text-align: center;*/
     }
-    
- /*@media only screen and (max-width: 500px) {
-
-    header {
-        height: 100px;        
-}
-    
-   header h1 {
-        float: left;
-        width: 100%;
-        font-size: 26px;
-       font-weight: 500;
-    }
-    
-   header nav {
-        width: 100%;
-       padding: 10px;
-       float:left;
-    }
-    
-    header nav a {
-    float: left;
-    display: inline;*/
-   /* border: 3px solid red;*/ /*would add a visual colored box around the link box */
-    /* padding: 10px */
-    /*margin-right: 1px;
-    font-size: 130px;
-    font-weight: 500;
-}
-    
-subnav {
-    height: 120px;
-    float: left;
-    width: 55%;
-    margin-left: 70px;
-} 
-
-subnav a {
-    font-size: 13px;
-    margin-right: 1px;
-    margin-left: 1px;
-   float:left; 
-    /*clear:both;*/
-    
-    }
-       /*@media screen and (max-width: 510px) {
-
-    header {
-        height: 100px;        
-}
-    
-   header h1 {
-        float: left;
-        width: 100%;
-        font-size: 26px;
-       font-weight: 500;
-    }
-    
-   header nav {
-        width: 100%;
-       padding: 10px;
-       float:left;
-    }
-    
-    header nav a {
-    float: left;
-    display: inline;
-   /*border: 3px solid red;*/ /*would add a visual colored box around the link box*/
-    /*padding: 10px*/
-   /* margin-right: 1px;
-    font-size: 130px;
-    font-weight: 500;*/ 
-        
+   
+ 
 }
